@@ -1,0 +1,22 @@
+{
+  "builds": [{"src": "portfolio_app.py", "use": "@vercel/python"}],
+  "routes": [{"src": "/(.*)", "dest": "portfolio_app.py"}]
+}
+```
+Save it as **All Files** → `vercel.json`
+
+**Step 2** — Upload `vercel.json` to your GitHub repo:
+- Go to your `My-Portfolio` repo on GitHub
+- Click **"Add file"** → **"Upload files"**
+- Upload `vercel.json`
+- Click **"Commit changes"**
+
+**Step 3** — Go to [vercel.com](https://vercel.com)
+- Sign up with **GitHub** — no card needed!
+- Click **"Add New Project"**
+- Select **"benstrikes/My-Portfolio"**
+- Click **"Deploy"**
+
+**Step 4** — In about 1 minute you'll get a free link like:
+```
+https://my-portfolio-xxx.vercel.app
