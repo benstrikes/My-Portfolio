@@ -5,7 +5,7 @@ app = Flask(__name__)
 PORTFOLIO = {
     "name": "Benson Varghese",
     "role": "Data Professional",
-    "sub_tagline": "Product engineer obsessed with speed, craft, and experiences people remember.",
+    "sub_tagline": "Experienced Data Professional Dashboard creation, Data Cleaning, Analysis, Visualisation and making ML Models",
     "location": "Dubai",
     "email": "benson.varghese16@gmail.com",
     "available": True,
@@ -19,7 +19,7 @@ PORTFOLIO = {
         {"name": "R",        "color": "#61DAFB"},
         {"name": "MyExcel",   "color": "#3178C6"},
         {"name": "Python",       "color": "#FFD43B"},
-        {"name": "Node.js",      "color": "#68A063"},
+        {"name": "ML Models",      "color": "#68A063"},
         {"name": "PostgreSQL",   "color": "#336791"},
         {"name": "SQL",          "color": "#FF9900"},
         {"name": "NoSQL",       "color": "#2496ED"},
@@ -57,7 +57,7 @@ PORTFOLIO = {
     ],
     "socials": [
         {"label": "GitHub",   "url": "#"},
-        {"label": "LinkedIn", "url": "#"},
+        {"label": "LinkedIn", "url": "www.linkedin.com/in/benson-varghese-ab4512106"},
         {"label": "Twitter",  "url": "#"},
     ],
 }
@@ -279,7 +279,7 @@ footer{padding:2rem 2.5rem;border-top:1px solid var(--border);
     <span class="badge-dot"></span>
     {% if p.available %}Available for projects{% else %}Currently busy{% endif %} · {{ p.location }}
   </div>
-  <div class="hero-greeting">Hey there 👋 I'm</div>
+  <div class="hero-greeting">Hey there  I'm</div>
   <h1 class="hero-name">
     {{ p.name.split()[0] }}<br>
     <span class="ital">{{ p.name.split()[1] }}</span>
