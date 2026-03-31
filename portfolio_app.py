@@ -3,11 +3,11 @@ from flask import Flask, render_template_string
 app = Flask(__name__)
 
 PORTFOLIO = {
-    "name": "Alex Morgan",
-    "role": "Full-Stack Engineer",
+    "name": "Benson Varghese",
+    "role": "Data Professional",
     "sub_tagline": "Product engineer obsessed with speed, craft, and experiences people remember.",
-    "location": "Singapore",
-    "email": "hello@alexmorgan.dev",
+    "location": "Dubai",
+    "email": "benson.varghese16@gmail.com",
     "available": True,
     "stats": [
         {"num": "6+",  "label": "Years"},
@@ -16,16 +16,16 @@ PORTFOLIO = {
         {"num": "99%", "label": "Coffee-powered"},
     ],
     "skills": [
-        {"name": "React",        "color": "#61DAFB"},
-        {"name": "TypeScript",   "color": "#3178C6"},
+        {"name": "R",        "color": "#61DAFB"},
+        {"name": "MyExcel",   "color": "#3178C6"},
         {"name": "Python",       "color": "#FFD43B"},
         {"name": "Node.js",      "color": "#68A063"},
         {"name": "PostgreSQL",   "color": "#336791"},
-        {"name": "AWS",          "color": "#FF9900"},
-        {"name": "Docker",       "color": "#2496ED"},
-        {"name": "GraphQL",      "color": "#E10098"},
-        {"name": "Figma",        "color": "#F24E1E"},
-        {"name": "System Design","color": "#A855F7"},
+        {"name": "SQL",          "color": "#FF9900"},
+        {"name": "NoSQL",       "color": "#2496ED"},
+        {"name": "MySQL",      "color": "#E10098"},
+        {"name": "Tableau",        "color": "#F24E1E"},
+        {"name": "Power BI","color": "#A855F7"},
     ],
     "projects": [
         {
