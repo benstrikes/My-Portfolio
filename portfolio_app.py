@@ -286,7 +286,7 @@ footer{padding:2rem 2.5rem;border-top:1px solid var(--border);
   </h1>
   <p class="hero-role"><strong>{{ p.role }}</strong> — {{ p.sub_tagline }}</p>
   <div class="hero-actions">
-    <a href="#projects" class="btn-p">See My Work ✨</a>
+    <a href="#projects" class="btn-p">See My Work </a>
     <a href="#contact" class="btn-s">
       Get in touch
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -371,7 +371,7 @@ footer{padding:2rem 2.5rem;border-top:1px solid var(--border);
 <section class="sec" id="contact">
   <div class="ctc reveal">
     <div class="ctc-big">Let's Work<br>Together!</div>
-    <p class="ctc-sub">Open to full-time roles, consulting & exciting side projects. Drop me a line — I reply fast ⚡</p>
+    <p class="ctc-sub">Open to full-time roles, consulting & exciting side projects. Drop me a line — I reply fast </p>
     <a href="mailto:{{ p.email }}" class="ctc-email">{{ p.email }}</a>
     <div class="socs">
       {% for s in p.socials %}<a href="{{ s.url }}" class="soc">{{ s.label }}</a>{% endfor %}
@@ -382,7 +382,7 @@ footer{padding:2rem 2.5rem;border-top:1px solid var(--border);
 <!-- FOOTER -->
 <footer>
   <div class="fl">{{ p.name.split()[0][0] }}{{ p.name.split()[1][0] }} ✦</div>
-  <div class="fr">© 2026 {{ p.name }}. Built with Python 🐍 + Flask</div>
+  <div class="fr">© 2026 {{ p.name }}. 
 </footer>
 
 <script>
