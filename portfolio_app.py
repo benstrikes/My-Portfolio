@@ -31,22 +31,22 @@ PORTFOLIO = {
         {
             "num": "01", "name": "FinFlow", "sub": "Analytics Dashboard",
             "desc": "Real-time financial analytics platform for 50k+ users. Built with React + D3.js.",
-            "tags": ["React", "D3.js", "FastAPI"], "color": "#00F5FF", "emoji": "📊",
+            "tags": ["React", "D3.js", "FastAPI"], "color": "#00F5FF", 
         },
         {
             "num": "02", "name": "Hive", "sub": "Design System",
             "desc": "80+ components adopted across 3 product teams. Fully documented in Storybook.",
-            "tags": ["TypeScript", "Storybook", "Figma"], "color": "#FFD700", "emoji": "🎨",
+            "tags": ["TypeScript", "Storybook", "Figma"], "color": "#FFD700", 
         },
         {
             "num": "03", "name": "Orbit", "sub": "API Gateway",
             "desc": "High-throughput gateway handling 2M+ req/day. Custom rate limiting & auth.",
-            "tags": ["Node.js", "Redis", "AWS"], "color": "#FF6B9D", "emoji": "🚀",
+            "tags": ["Node.js", "Redis", "AWS"], "color": "#FF6B9D", 
         },
         {
             "num": "04", "name": "Atlas", "sub": "Workspace Platform",
             "desc": "Real-time collab platform — 8k users in 6 months. Acquired by a Series B startup.",
-            "tags": ["Next.js", "WebSockets", "PostgreSQL"], "color": "#7CFF6B", "emoji": "⚡",
+            "tags": ["Next.js", "WebSockets", "PostgreSQL"], "color": "#7CFF6B", 
         },
     ],
     "experience": [
