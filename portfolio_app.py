@@ -382,7 +382,7 @@ footer{padding:2rem 2.5rem;border-top:1px solid var(--border);
 <!-- FOOTER -->
 <footer>
   <div class="fl">{{ p.name.split()[0][0] }}{{ p.name.split()[1][0] }} ✦</div>
-  <div class="fr">© 2026 {{ p.name }}. 
+  <div class="fr">© 2026 {{ p.name }}.</div> 
 </footer>
 
 <script>
