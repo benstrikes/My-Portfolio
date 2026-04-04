@@ -50,8 +50,8 @@ PORTFOLIO = {
         },
     ],
     "experience": [
-        {"date": "2022–Now",  "role": "Senior SWE",       "company": "Stripe"}
-        {"date": "2020–2022", "role": "Software Engineer", "company": "Grab"}
+        {"date": "2022–Now",  "role": "Senior SWE",       "company": "Stripe"},
+        {"date": "2020–2022", "role": "Software Engineer", "company": "Grab"},
         {"date": "2019–2020", "role": "Frontend Engineer", "company": "Shopback"},
         {"date": "2018–2019", "role": "B.Eng CS",          "company": "NUS"},
     ],
@@ -334,7 +334,7 @@ footer{padding:2rem 2.5rem;border-top:1px solid var(--border);
     {% for proj in p.projects %}
     <div class="bc reveal" data-d="{{ loop.index }}" style="--cc:{{ proj.color }}">
       <div class="ct">
-        <div class="cem">{{ proj.emoji }}</div>
+        
         <div class="cnum">{{ proj.num }}</div>
       </div>
       <div class="cname">{{ proj.name }}</div>
@@ -356,7 +356,7 @@ footer{padding:2rem 2.5rem;border-top:1px solid var(--border);
   <div class="eg">
     {% for e in p.experience %}
     <div class="ec reveal" data-d="{{ loop.index }}">
-      <div class="eemoji">{{ e.emoji }}</div>
+      
       <div>
         <div class="edate">{{ e.date }}</div>
         <div class="erole">{{ e.role }}</div>
