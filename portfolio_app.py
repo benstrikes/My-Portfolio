@@ -10,10 +10,10 @@ PORTFOLIO = {
     "email": "benson.varghese16@gmail.com",
     "available": True,
     "stats": [
-        {"num": "#",  "label": "Years"},
-        {"num": "#", "label": "Projects"},
-        {"num": "#",  "label": "Clients"},
-        {"num": "#", "label": "Coffee-powered"},
+        {"num": "4+",  "label": "Years"},
+        {"num": "5", "label": "Projects"},
+        {"num": "4",  "label": "Companies Worked"},
+        #{"num": "#", "label": "Coffee-powered"},
     ],
     "skills": [
         {"name": "R",        "color": "#61DAFB"},
