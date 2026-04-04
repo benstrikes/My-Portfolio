@@ -50,14 +50,14 @@ PORTFOLIO = {
         },
     ],
     "experience": [
-        {"date": "2022–Now",  "role": "Senior SWE",       "company": "Stripe",   "emoji": "💳"},
-        {"date": "2020–2022", "role": "Software Engineer", "company": "Grab",     "emoji": "🚗"},
-        {"date": "2019–2020", "role": "Frontend Engineer", "company": "Shopback", "emoji": "🛒"},
-        {"date": "2018–2019", "role": "B.Eng CS",          "company": "NUS",      "emoji": "🎓"},
+        {"date": "2022–Now",  "role": "Senior SWE",       "company": "Stripe"}
+        {"date": "2020–2022", "role": "Software Engineer", "company": "Grab"}
+        {"date": "2019–2020", "role": "Frontend Engineer", "company": "Shopback"},
+        {"date": "2018–2019", "role": "B.Eng CS",          "company": "NUS"},
     ],
     "socials": [
         {"label": "GitHub",   "url": "#"},
-        {"label": "LinkedIn", "url": "www.linkedin.com/in/benson-varghese-ab4512106"},
+        {"label": "LinkedIn", "url": "linkedin.com/in/benson-varghese-ab4512106"},
         {"label": "Twitter",  "url": "#"},
     ],
 }
