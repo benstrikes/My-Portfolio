@@ -5,48 +5,48 @@ app = Flask(__name__)
 PORTFOLIO = {
     "name": "Benson Varghese",
     "role": "Data Professional",
-    "sub_tagline": "Data Professional | Delivering Data-Driven Insights | Visualisation and making ML Models",
+    "sub_tagline": "Delivering Data-Driven Insights | Visualisation and making ML Models",
     "location": "Dubai",
     "email": "benson.varghese16@gmail.com",
     "available": True,
     "stats": [
-        {"num": "4+",  "label": "Years"},
-        {"num": "5", "label": "Projects"},
-        {"num": "4",  "label": "Companies Worked"},
-        {"num": "#", "label": "Coffee-powered"},
+        {"num": "4+", "label": "Years"},
+        {"num": "5",  "label": "Projects"},
+        {"num": "4",  "label": "Companies"},
+        {"num": "#",  "label": "Coffee-powered"},
     ],
     "skills": [
         {"name": "R",        "color": "#61DAFB"},
-        {"name": "MyExcel",   "color": "#3178C6"},
-        {"name": "Python",       "color": "#FFD43B"},
-        {"name": "ML Models",      "color": "#68A063"},
-        {"name": "PostgreSQL",   "color": "#336791"},
-        {"name": "SQL",          "color": "#FF9900"},
-        {"name": "NoSQL",       "color": "#2496ED"},
-        {"name": "MySQL",      "color": "#E10098"},
-        {"name": "Tableau",        "color": "#F24E1E"},
-        {"name": "Power BI","color": "#A855F7"},
+        {"name": "Excel",    "color": "#3178C6"},
+        {"name": "Python",   "color": "#FFD43B"},
+        {"name": "ML Models","color": "#68A063"},
+        {"name": "PostgreSQL","color": "#336791"},
+        {"name": "SQL",      "color": "#FF9900"},
+        {"name": "NoSQL",    "color": "#2496ED"},
+        {"name": "MySQL",    "color": "#E10098"},
+        {"name": "Tableau",  "color": "#F24E1E"},
+        {"name": "Power BI", "color": "#A855F7"},
     ],
     "projects": [
         {
             "num": "01", "name": "FinFlow", "sub": "Analytics Dashboard",
             "desc": "Real-time financial analytics platform for 50k+ users. Built with React + D3.js.",
-            "tags": ["React", "D3.js", "FastAPI"], "color": "#00F5FF", 
+            "tags": ["React", "D3.js", "FastAPI"], "color": "#00F5FF",
         },
         {
             "num": "02", "name": "Hive", "sub": "Design System",
             "desc": "80+ components adopted across 3 product teams. Fully documented in Storybook.",
-            "tags": ["TypeScript", "Storybook", "Figma"], "color": "#FFD700", 
+            "tags": ["TypeScript", "Storybook", "Figma"], "color": "#FFD700",
         },
         {
             "num": "03", "name": "Orbit", "sub": "API Gateway",
             "desc": "High-throughput gateway handling 2M+ req/day. Custom rate limiting & auth.",
-            "tags": ["Node.js", "Redis", "AWS"], "color": "#FF6B9D", 
+            "tags": ["Node.js", "Redis", "AWS"], "color": "#FF6B9D",
         },
         {
             "num": "04", "name": "Atlas", "sub": "Workspace Platform",
             "desc": "Real-time collab platform — 8k users in 6 months. Acquired by a Series B startup.",
-            "tags": ["Next.js", "WebSockets", "PostgreSQL"], "color": "#7CFF6B", 
+            "tags": ["Next.js", "WebSockets", "PostgreSQL"], "color": "#7CFF6B",
         },
     ],
     "experience": [
@@ -57,7 +57,7 @@ PORTFOLIO = {
     ],
     "socials": [
         {"label": "GitHub",   "url": "#"},
-        {"label": "LinkedIn", "url": "linkedin.com/in/benson-varghese-ab4512106"},
+        {"label": "LinkedIn", "url": "https://linkedin.com/in/benson-varghese-ab4512106"},
         {"label": "Twitter",  "url": "#"},
     ],
 }
@@ -83,8 +83,6 @@ body{background:var(--bg);color:var(--text);font-family:'Space Mono',monospace;o
 .cur-ring{position:fixed;width:44px;height:44px;border:1.5px solid rgba(255,255,255,.4);border-radius:50%;
   transform:translate(-50%,-50%);transition:all .22s ease;pointer-events:none;z-index:9998}
 body{cursor:none}
-
-/* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:center;
   justify-content:space-between;padding:1.2rem 2.5rem;
   background:rgba(7,7,15,.85);backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}
@@ -104,8 +102,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:cen
   background:linear-gradient(90deg,var(--c1),var(--c2));color:#07070f;
   transition:transform .2s,box-shadow .2s;box-shadow:0 0 20px rgba(0,245,255,.2)}
 .nav-btn:hover{transform:translateY(-2px);box-shadow:0 0 35px rgba(0,245,255,.45)}
-
-/* HERO */
 .hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;
   padding:8rem 2.5rem 4rem;position:relative;z-index:1}
 .hero-badge{display:inline-flex;align-items:center;gap:.5rem;font-size:.7rem;letter-spacing:.12em;
@@ -142,8 +138,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:cen
   background:linear-gradient(135deg,var(--c1),var(--c2));-webkit-background-clip:text;
   -webkit-text-fill-color:transparent;background-clip:text}
 .stl{font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-top:.2rem}
-
-/* MARQUEE */
 .mq{padding:1.4rem 0;overflow:hidden;border-top:1px solid var(--border);
   border-bottom:1px solid var(--border);background:rgba(0,245,255,.02);position:relative;z-index:1}
 .mq-track{display:flex;width:max-content;animation:mq 22s linear infinite}
@@ -152,15 +146,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:cen
   font-family:'Bricolage Grotesque',sans-serif;font-size:.95rem;font-weight:600;
   white-space:nowrap;color:var(--muted)}
 .mq-dot{width:6px;height:6px;border-radius:50%;background:var(--c2);flex-shrink:0}
-
-/* SECTIONS */
 .sec{padding:7rem 2.5rem;position:relative;z-index:1;border-top:1px solid var(--border)}
 .slabel{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--c1);margin-bottom:.6rem}
 .stitle{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(2rem,5vw,3.2rem);
   font-weight:800;line-height:1;letter-spacing:-.02em;margin-bottom:3.5rem}
 .stitle em{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:var(--c2)}
-
-/* SKILLS */
 .sk-grid{display:flex;flex-wrap:wrap;gap:.75rem}
 .sk-pill{display:flex;align-items:center;gap:.5rem;font-size:.75rem;font-weight:700;
   letter-spacing:.05em;padding:.5rem 1.1rem;border-radius:100px;
@@ -168,8 +158,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:cen
 .sk-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
 .sk-pill:hover{transform:translateY(-3px) scale(1.06);
   border-color:var(--sc);box-shadow:0 8px 28px color-mix(in srgb,var(--sc) 30%,transparent)}
-
-/* BENTO */
 .bento{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem}
 .bc{background:var(--surface);border:1px solid var(--border);border-radius:20px;
   padding:2rem;position:relative;overflow:hidden;cursor:none;
@@ -180,8 +168,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:cen
 .bc:hover{transform:translateY(-7px);box-shadow:0 24px 60px rgba(0,0,0,.4)}
 .bc:hover::before{opacity:1}
 .bc:hover{border-color:color-mix(in srgb,var(--cc) 50%,transparent)}
-.ct{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1.5rem}
-.cem{font-size:2.5rem;line-height:1}
+.ct{display:flex;justify-content:flex-end;align-items:flex-start;margin-bottom:1.5rem}
 .cnum{font-family:'Bricolage Grotesque',sans-serif;font-size:.65rem;font-weight:700;
   letter-spacing:.15em;text-transform:uppercase;padding:.3rem .7rem;border-radius:100px;
   color:var(--cc);border:1px solid var(--cc);background:color-mix(in srgb,var(--cc) 10%,transparent)}
@@ -195,19 +182,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:cen
   display:flex;align-items:center;justify-content:center;border:1px solid var(--border);
   color:var(--muted);transition:all .2s;font-size:1rem}
 .bc:hover .carrow{background:var(--cc);border-color:var(--cc);color:#07070f;transform:rotate(-45deg)}
-
-/* EXPERIENCE */
 .eg{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
 .ec{background:var(--surface);border:1px solid var(--border);border-radius:16px;
   padding:1.75rem;display:flex;align-items:center;gap:1.25rem;transition:all .25s;cursor:none}
 .ec:hover{transform:translateY(-4px);border-color:rgba(0,245,255,.35);
   box-shadow:0 12px 40px rgba(0,245,255,.1)}
-.eemoji{font-size:2rem;line-height:1;flex-shrink:0}
 .edate{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--c1);margin-bottom:.2rem}
 .erole{font-family:'Bricolage Grotesque',sans-serif;font-size:1rem;font-weight:700;margin-bottom:.15rem}
 .eco{font-size:.75rem;color:var(--muted)}
-
-/* CONTACT */
 .ctc{background:var(--surface);border:1px solid var(--border);border-radius:24px;
   padding:4rem;text-align:center;position:relative;overflow:hidden}
 .ctc::before{content:'';position:absolute;inset:0;border-radius:24px;
@@ -229,22 +211,18 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:cen
   padding:.6rem 1.4rem;border-radius:100px;border:1px solid var(--border);
   color:var(--muted);transition:all .2s}
 .soc:hover{border-color:var(--c1);color:var(--c1);background:rgba(0,245,255,.06)}
-
-/* FOOTER */
 footer{padding:2rem 2.5rem;border-top:1px solid var(--border);
   display:flex;justify-content:space-between;align-items:center;position:relative;z-index:1}
 .fl{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:.9rem;
   background:linear-gradient(90deg,var(--c1),var(--c2));-webkit-background-clip:text;
   -webkit-text-fill-color:transparent;background-clip:text}
 .fr{font-size:.62rem;letter-spacing:.1em;color:var(--muted)}
-
 @keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
 .reveal{opacity:0;transform:translateY(32px);
   transition:opacity .65s cubic-bezier(.16,1,.3,1),transform .65s cubic-bezier(.16,1,.3,1)}
 .reveal.on{opacity:1;transform:none}
 .reveal[data-d="1"]{transition-delay:.1s}.reveal[data-d="2"]{transition-delay:.2s}
 .reveal[data-d="3"]{transition-delay:.3s}.reveal[data-d="4"]{transition-delay:.4s}
-
 @media(max-width:768px){
   nav{padding:1rem 1.2rem}.nav-links{display:none}
   .hero{padding:6rem 1.2rem 3rem}
@@ -261,7 +239,6 @@ footer{padding:2rem 2.5rem;border-top:1px solid var(--border);
 <div class="cur" id="cur"></div>
 <div class="cur-ring" id="ring"></div>
 
-<!-- NAV -->
 <nav>
   <div class="nav-logo">{{ p.name.split()[0][0] }}{{ p.name.split()[1][0] }}</div>
   <ul class="nav-links">
@@ -273,20 +250,19 @@ footer{padding:2rem 2.5rem;border-top:1px solid var(--border);
   <button class="nav-btn">Let's Talk 🚀</button>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-badge">
     <span class="badge-dot"></span>
     {% if p.available %}Available for projects{% else %}Currently busy{% endif %} · {{ p.location }}
   </div>
-  <div class="hero-greeting">Hey there  I'm</div>
+  <div class="hero-greeting">Hey there, I'm</div>
   <h1 class="hero-name">
     {{ p.name.split()[0] }}<br>
     <span class="ital">{{ p.name.split()[1] }}</span>
   </h1>
   <p class="hero-role"><strong>{{ p.role }}</strong> — {{ p.sub_tagline }}</p>
   <div class="hero-actions">
-    <a href="#projects" class="btn-p">See My Work </a>
+    <a href="#projects" class="btn-p">See My Work</a>
     <a href="#contact" class="btn-s">
       Get in touch
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -304,7 +280,6 @@ footer{padding:2rem 2.5rem;border-top:1px solid var(--border);
   </div>
 </section>
 
-<!-- MARQUEE -->
 <div class="mq">
   <div class="mq-track">
     {% for sk in p.skills %}<div class="mq-item"><span class="mq-dot"></span>{{ sk.name }}</div>{% endfor %}
@@ -313,7 +288,6 @@ footer{padding:2rem 2.5rem;border-top:1px solid var(--border);
   </div>
 </div>
 
-<!-- SKILLS -->
 <section class="sec" id="skills">
   <div class="slabel reveal">What I use</div>
   <h2 class="stitle reveal">My <em>Toolkit</em></h2>
@@ -326,7 +300,6 @@ footer{padding:2rem 2.5rem;border-top:1px solid var(--border);
   </div>
 </section>
 
-<!-- PROJECTS -->
 <section class="sec" id="projects">
   <div class="slabel reveal">Selected work</div>
   <h2 class="stitle reveal">Things I've <em>Built</em></h2>
@@ -334,7 +307,6 @@ footer{padding:2rem 2.5rem;border-top:1px solid var(--border);
     {% for proj in p.projects %}
     <div class="bc reveal" data-d="{{ loop.index }}" style="--cc:{{ proj.color }}">
       <div class="ct">
-        
         <div class="cnum">{{ proj.num }}</div>
       </div>
       <div class="cname">{{ proj.name }}</div>
@@ -349,14 +321,12 @@ footer{padding:2rem 2.5rem;border-top:1px solid var(--border);
   </div>
 </section>
 
-<!-- EXPERIENCE -->
 <section class="sec" id="exp">
   <div class="slabel reveal">Where I've been</div>
   <h2 class="stitle reveal">My <em>Journey</em></h2>
   <div class="eg">
     {% for e in p.experience %}
     <div class="ec reveal" data-d="{{ loop.index }}">
-      
       <div>
         <div class="edate">{{ e.date }}</div>
         <div class="erole">{{ e.role }}</div>
@@ -367,11 +337,10 @@ footer{padding:2rem 2.5rem;border-top:1px solid var(--border);
   </div>
 </section>
 
-<!-- CONTACT -->
 <section class="sec" id="contact">
   <div class="ctc reveal">
     <div class="ctc-big">Let's Work<br>Together!</div>
-    <p class="ctc-sub">Open to full-time roles, consulting & exciting side projects. Drop me a line — I reply fast </p>
+    <p class="ctc-sub">Open to full-time roles, consulting & exciting side projects. Drop me a line — I reply fast ⚡</p>
     <a href="mailto:{{ p.email }}" class="ctc-email">{{ p.email }}</a>
     <div class="socs">
       {% for s in p.socials %}<a href="{{ s.url }}" class="soc">{{ s.label }}</a>{% endfor %}
@@ -379,31 +348,24 @@ footer{padding:2rem 2.5rem;border-top:1px solid var(--border);
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="fl">{{ p.name.split()[0][0] }}{{ p.name.split()[1][0] }} ✦</div>
-  <div class="fr">© 2026 {{ p.name }}.</div> 
+  <div class="fr">© 2026 {{ p.name }}. Built with Python 🐍 + Flask</div>
 </footer>
 
 <script>
-// ── Canvas background ──────────────────────────────────────────
 const canvas=document.getElementById('bg-canvas');
 const ctx=canvas.getContext('2d');
 let W,H;const COLS=['#00F5FF','#FF6B9D','#FFD700','#7CFF6B'];
 const mouse={x:innerWidth/2,y:innerHeight/2};
-
 function resize(){W=canvas.width=innerWidth;H=canvas.height=innerHeight}
 resize();addEventListener('resize',resize);
 addEventListener('mousemove',e=>{mouse.x=e.clientX;mouse.y=e.clientY});
-
-// Grid
 function drawGrid(){
   ctx.strokeStyle='rgba(255,255,255,0.025)';ctx.lineWidth=1;
   for(let x=0;x<W;x+=80){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.stroke()}
   for(let y=0;y<H;y+=80){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.stroke()}
 }
-
-// Particles
 class P{
   constructor(init=false){this.reset(init)}
   reset(init=false){
@@ -424,10 +386,7 @@ class P{
     ctx.beginPath();ctx.arc(this.x,this.y,this.r,0,Math.PI*2);ctx.fill();ctx.restore();
   }
 }
-
 const pts=[];for(let i=0;i<140;i++)pts.push(new P(true));
-
-// Shooting stars
 const stars=[];let nextShoot=0;
 function maybeShoot(now){
   if(now<nextShoot)return;
@@ -435,7 +394,6 @@ function maybeShoot(now){
     len:Math.random()*120+60,c:COLS[Math.floor(Math.random()*4)],life:1});
   nextShoot=now+Math.random()*3500+1500;
 }
-
 function loop(ts=0){
   ctx.clearRect(0,0,W,H);
   drawGrid();
@@ -453,8 +411,6 @@ function loop(ts=0){
   requestAnimationFrame(loop);
 }
 requestAnimationFrame(loop);
-
-// ── Cursor ─────────────────────────────────────────────────────
 const cur=document.getElementById('cur'),ring=document.getElementById('ring');
 let cx=0,cy=0,rx=0,ry=0;
 document.addEventListener('mousemove',e=>{cx=e.clientX;cy=e.clientY;
@@ -476,21 +432,10 @@ document.querySelectorAll('a,button,.bc,.sk-pill,.ec').forEach(el=>{
     cur.style.transform='translate(-50%,-50%) scale(1)';
   });
 });
-
-// ── Scroll reveal ──────────────────────────────────────────────
-new IntersectionObserver(entries=>{
-  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')});
-},{threshold:.1}).observe.bind(
-  new IntersectionObserver(entries=>{
-    entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')});
-  },{threshold:.1})
-);
 const io=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')});
 },{threshold:.1});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-
-// ── Count-up ───────────────────────────────────────────────────
 document.querySelectorAll('.stn').forEach(el=>{
   const raw=el.textContent.trim();
   const num=parseFloat(raw);if(isNaN(num))return;
