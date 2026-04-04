@@ -5,7 +5,7 @@ app = Flask(__name__)
 PORTFOLIO = {
     "name": "Benson Varghese",
     "role": "Data Professional",
-    "sub_tagline": "Experienced Data Professional Dashboard creation, Data Cleaning, Analysis, Visualisation and making ML Models",
+    "sub_tagline": "Data Professional | Delivering Data-Driven Insights | Visualisation and making ML Models",
     "location": "Dubai",
     "email": "benson.varghese16@gmail.com",
     "available": True,
